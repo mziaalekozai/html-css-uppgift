@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	background-color:rgb(240, 228, 228);
+
+}
+
+main .main-top{
+	width: 100%;
+	background-image: url(./bilder/main-top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 5em;
+}
+main .main-top-text{
+
+	color: rgb(240, 229, 229);
+	text-shadow: 1px 2px 2px rgb(84, 88, 93);
+} 
+main .main-top-text h1{
+	padding-bottom: 1.5em;
+	font-size: 2em;
+}
+main .main-top-text h3{
+	padding-bottom: 1.5em;
+}
+
+main .main-top-text button, 
+.main-restaurang-body button{
+	padding: 0.5em 3em;
+	border: 1px solid rgb(84, 88, 93);
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	font-weight: bold;
+	color: rgb(240, 229, 229);
+	background-color: rgb(146, 206, 231);
+}
+main .main-top-text button:hover, 
+.main-restaurang-body button:hover{
+	cursor: pointer;
+	background-color: rgb(206, 216, 229);
+	color: rgb(98, 123, 134);
+}
+main .main-top-text-title{
+	padding-top:3em ;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgb(84, 88, 93);
+	color: rgb(71, 59, 65);
+}
+main .main-lecture{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 15px;
+	place-items: center;
+	padding: 1em;
+
+	@media (max-width: 500px) {
+		display: block;
+	}
+	
+}
+main .main-lecture-body {
+	margin: 10px;
+	padding: 1em;
+	background-color:rgb(232, 183, 127);border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	
+	@media (max-width: 500px) {
+		display: block;
+		margin-bottom: 1.5em;
+	  }
+
+}
+main .main-lecture img{
+	width: 6em;
+	border-radius:5%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+main .main-lecture-left{
+	text-align: center;
+	padding:0 0.5em ;
+} 
+main .main-lecture-right{
+	padding: 1em;
+}
+
+main .main-restaurang-body{
+	/* width: 100%; */
+	background-image: url(./bilder/Restaurang.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	/* padding: 2em; */
+	margin: 1.5em;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+main .main-restaurang-text{
+	padding: 1em;
+	display: block;
+}
+main .main-restaurang-text h1{
+font-size: 2em;
+color: #ffffff;
+/* padding-bottom: 2em; */
+}
+
+footer {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(146, 206, 231);
+	padding: 1em;
+	text-align: left;
+
+}
+
+footer .footer-center img{
+	width: 5em;
+}
