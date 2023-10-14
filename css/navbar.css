@@ -89,29 +89,3 @@ header .header-sm-in:hover {
 header .header-nav ul li:hover {
 	font-weight: bold;
 }
-
-/* header .center{
-	flex-grow: 1;
-}
-header .nav-container{
-	display: flex;
-	align-items: center;
-	
-}
-
-header .nav-container ul li{
-	list-style: none;
-	/* display: flex; 
-	float: left;
-	font-size: 20px;
-	padding: 20px;
-	text-align: center;
-	align-items: center;
-	/* display: block; 
-	
-}
-header .nav-container ul li:hover  {
-	font-weight: bold;
-	background-color: rgb(113, 186, 218);
-	text-decoration: underline;
-} */

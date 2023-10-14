@@ -13,6 +13,9 @@ main .main-top{
 	width: 100%;
 	background-image: url(./bilder/main-top.jpg);
 	background-repeat: no-repeat;
+	/* filter: grayscale(50%); */
+	/* filter: drop-shadow(8px 8px 10px rgb(5, 5, 5)); */
+	/* filter: opacity(30%); */
 	background-size: cover;
 	text-align: center;
 	padding: 5em;
@@ -27,8 +30,21 @@ main .main-top-text h1{
 	font-size: 2em;
 }
 main .main-top-text h3{
-	padding-bottom: 1.5em;
+	padding-bottom: 1em;
 }
+main .main-top-checkmark{
+	padding: 2em ;
+}
+main .checkmark-container {
+	margin: 12px;
+	cursor: pointer;
+	font-size: 22px;
+  }
+  main .checkmark-container input {
+	cursor: pointer;
+  }
+
+
 
 main .main-top-text button, 
 .main-restaurang-body button{
@@ -38,7 +54,7 @@ main .main-top-text button,
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	font-weight: bold;
 	color: rgb(240, 229, 229);
-	background-color: rgb(146, 206, 231);
+	background-color: rgb(52, 66, 145);
 }
 main .main-top-text button:hover, 
 .main-restaurang-body button:hover{
@@ -47,10 +63,11 @@ main .main-top-text button:hover,
 	color: rgb(98, 123, 134);
 }
 main .main-top-text-title{
-	padding-top:3em ;
+	padding:1em 0 1em;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgb(84, 88, 93);
 	color: rgb(71, 59, 65);
+	font-size: 2em;
 }
 main .main-lecture{
 	display: grid;
@@ -67,7 +84,9 @@ main .main-lecture{
 main .main-lecture-body {
 	margin: 10px;
 	padding: 1em;
-	background-color:rgb(232, 183, 127);border-radius: 5px;
+	background-color:rgb(131, 206, 219);
+	color: rgb(57, 56, 64);
+	border-radius: 5px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	display: grid;
 	grid-template-columns: 1fr 3fr;
@@ -90,26 +109,57 @@ main .main-lecture-left{
 main .main-lecture-right{
 	padding: 1em;
 }
+main .main-lecture-checkmark{
+	padding-top: 1em;
+	/* display: flex; */
+	text-align: right;
+}
 
 main .main-restaurang-body{
-	/* width: 100%; */
-	background-image: url(./bilder/Restaurang.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	text-align: center;
-	/* padding: 2em; */
+	padding: 2em 0;
 	margin: 1.5em;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	background-color:rgb(131, 206, 219);
 }
-main .main-restaurang-text{
-	padding: 1em;
-	display: block;
-}
+
 main .main-restaurang-text h1{
 font-size: 2em;
-color: #ffffff;
-/* padding-bottom: 2em; */
+color: rgb(49, 55, 86);
+text-shadow: 1px 2px 2px rgb(226, 230, 235);
+
 }
+main .main-restaurang-image img{
+	width: 15em;
+	/* padding: 1em; */
+	border-radius: 5px;
+}
+main .main-restaurang-image{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 15px;
+	place-items: center;
+	padding: 1em;
+	
+	/* display: flex;
+	/* flex-direction: wrap; 
+	justify-content: space-between;
+	@media (max-width: 600px) {
+		display: block;
+		margin-bottom: 1.5em;
+	  } */
+}
+
+main .main-restaurang-checkmark{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+
+
 
 footer {
 	width: 100%;
