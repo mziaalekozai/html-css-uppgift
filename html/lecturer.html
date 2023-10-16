@@ -34,37 +34,21 @@
 			<div class="main-top-text">
 				<h1>Föreläsare</h1>
 				<p>Här hittar du en lista över tillgängliga föreläsare hos Boka konfrans. <br> Du kan boka en föreläsare eller talare direkt på deras profil, och läsa mer om den specifika föreläsaren. </p>
-				<!-- <div class="main-top-checkmark">
-					<label class="checkmark-container"
-					>Fredag 20/10
-					<input type="checkbox" />
-				</label>
-				<label class="checkmark-container"
-				>Lördag 21/10
-				<input type="checkbox" name="checkbox" />
-			</label>
-			<label class="checkmark-container"
-			>Söndag 22/10
-			<input type="checkbox" name="checkbox" />
-		</label>
-	</div> -->
-	<a href="#main-register-top"
-	><button class="main-Anmäla-btn">Anmäla</button></a
-	>
-</div>
-</section>
+				<a href="#main-register-top">
+				<button class="main-Anmäla-btn">Anmäla</button></a>
+			</div>
+		</section>
 
-<section class="main-lecture">
-	<div class="main-lecture-body">
-	  <div class="colin-moon-image"></div>
-	  <h2>Colin Moon</h2>
-	  <div class="main-lecture-info">
-		<h4>Responsive Web Design Masterclass</h4>
-		<p>
-			I denna masterclass fördjupar du din förståelse för responsiv
-		  webbdesign. Utforska avancerade tekniker för att skapa webbplatser
-		  som anpassar sig smidigt till olika skärmstorlekar och enheter.
-		</p>
+		<section class="main-lecture">
+			<div class="main-lecture-body">
+	 		<div class="colin-moon-image"></div>
+	 		 <h2>Colin Moon</h2>
+	 		<div class="main-lecture-info">
+			<h4>Responsive Web Design Masterclass</h4>
+			<p>I denna masterclass fördjupar du din förståelse för responsiv
+		 	webbdesign. Utforska avancerade tekniker för att skapa webbplatser
+		  	som anpassar sig smidigt till olika skärmstorlekar och enheter.
+			</p>
 		<div class="main-lecture-checkmark">
 			<label class="checkmark-container"
 			>Lördag 21/10
@@ -242,29 +226,65 @@
 </section>
 
 <section id="main-register-top">
+	<div class="main-register">
+		<p>Här kan du anmäla dig till seminarier och välja föreläsare samt de dagar som passar dig.</p>
+		<form>
+			<section class="checkbox-section">
+				<p> Välj dagspass </p>
+				<div class="main-top-checkmark">
+					<input id="day-1" type="checkbox" />
+					<label for="day-1"> Fredag 20/10 </label>
+				</div>
+				<div class="main-top-checkmark">
+					<input id="day-2" type="checkbox" />
+					<label for="day-2"> Lördag 21/10 </label>
+				</label>
+				</div>
+				<div class="main-top-checkmark">
+					<input id="day-3" type="checkbox" />
+					<label for="day-3"> Söndag 22/10 </label>
+				</label>
+				</div>
+			</section>
+			<section class="form-section">
+				<label for="form-name"> Skriv in ditt namn </label>
+				<input id="form-name" type="text" value="" placeholder="Namn"
+					required
+					minlength="2"
+					maxlength="15"
+					/>
+				<p class="error-message"> Var vänlig skriv in ditt namn </p>
+			</section>
+			
+			<section class="form-section">
+				<label for="form-adres"> Address </label>
+				<input id="form-addres" type="text" required value="" placeholder="Gata address" />
+			</section>
+			<section class="form-section">
+				<label for="form-adres">  </label>
+				<input id="form-addres" type="number" required value="" placeholder="Postnummer" />
+			</section>
+			<section class="form-section">
+				<label for="form-adres">  </label>
+				<input id="form-addres" type="text" required value="" placeholder="Ord" />
+			</section>
+			
+			<section class="form-section">
+				<label for="form-email"> E-post </label>
+				<input id="form-email" type="email" required value="" placeholder="E-post" />
+			</section>
+			<section class="form-section row">
+				<button type="submit"> Anmäla</button>
+				<button type="button"> Avbryt</button>
+			</section>
 
-	<div class="main-top-checkmark">
-	  <label class="checkmark-container"
-		>Fredag 20/10
-		<input type="checkbox" />
-	  </label>
-	  <label class="checkmark-container"
-		>Lördag 21/10
-		<input type="checkbox" name="checkbox" />
-	  </label>
-	  <label class="checkmark-container"
-		>Söndag 22/10
-		<input type="checkbox" name="checkbox" />
-	  </label>
-	</div>
-	<a href="./html/register.html"
-	  ><button class="main-Anmäla-btn">Anmäla</button></a
-	>
-	</div>
+</div>
 </section>
-	</main>
 
-	<footer>
+</form>
+</main>
+
+<footer>
 		<div class="footer-left">
 			<h3>Address</h3>
 		  <p>Cykelvädersgatan 19</p>
