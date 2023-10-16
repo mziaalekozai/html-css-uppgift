@@ -5,10 +5,13 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: rgb(146, 206, 231);
+	background-color: rgb(255, 255, 255);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: space-between;
+	z-index: 1;
+
+
 }
 
 header .header-logo {
@@ -18,11 +21,11 @@ header .header-logo {
 	/* line-height: 60px; */
 	display: flex;
 	align-items: center;
-	
+
 }
 
 header img {
-	width: 6em;
+	width: 10em;
 	padding-left: 1em;
 }
 
@@ -49,13 +52,13 @@ header .header-nav ul li a {
 	font-family: Arial, Helvetica, sans-serif;
 	text-shadow: 1px 2px 2px rgb(84, 88, 93);
 	color: rgb(52, 66, 145);
-	
+
 }
 
 header .header-sm {
 	width: fit-content;
 	height: 100%;
-	padding-right: 20px;
+	margin-right: 20px;
 	display: flex;
 	align-items: center;
 	column-gap: 10px;
@@ -71,7 +74,7 @@ header .header-sm-fb {
 
 header .header-sm-fb:hover {
 	background-image: url(../bilder/facebook-color.png);
-	
+
 }
 
 header .header-sm-in {
@@ -88,4 +91,78 @@ header .header-sm-in:hover {
 
 header .header-nav ul li:hover {
 	font-weight: bold;
+}
+
+@media (max-width: 800px) {
+	body {
+		padding-top: 9em;
+	}
+
+	header {
+		width: 100%;
+		
+		position: absolute;
+		/* display: flex;
+		flex-direction: column;
+		justify-content: center;   */
+		
+	}
+	
+	main {
+		position: relative;
+	}
+	
+	header .header-nav {
+		border-top: 1px solid gray;
+		position: absolute;
+		top: 100%;
+		bottom: 0;
+		width: 100%;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		padding-bottom: 1.5em;
+			/* text-align: center; */
+		justify-self: center;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+
+
+}
+
+@media (max-width: 510px) {
+	header {
+		width: 100%;
+		position: absolute;
+	}
+
+	main {
+		position: relative;
+		padding-top: 28%;
+	}
+
+	header .header-nav ul {
+		border-top: 1px solid gray;
+
+		position: absolute;
+		/* justify-content: center; */
+		top: 0%;
+		bottom: 0;
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(1fr 1fr);
+		gap: 1em;
+		justify-content: center; 
+		align-items: center;
+		/* align-items: center;  */
+		padding-bottom: 45%;
+		background-color: rgb(255, 255, 255);
+		z-index: 1;
+
+	}
+
+
+
 }

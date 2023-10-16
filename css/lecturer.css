@@ -1,0 +1,90 @@
+main .main-lecture-top{
+	width: 100%;
+	background-image: url(../bilder/förläsare.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding:5em 2em 15em;
+	@media (max-width: 670px) {
+		padding: 4em;
+		font-size: 0.5em;
+	} 
+}
+
+main .main-lecture-top .main-top-text{
+	max-width: 600px;
+	padding: 1em;
+	font-size: 1.5em;
+}
+
+main .main-lecture{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 20px;
+	margin-top: 5em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid gray;
+	place-items: center;
+	
+}
+main .main-lecture-body {
+	margin: 10px;
+	background-color:rgb(232, 241, 242);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+	width: 22em;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+}
+
+main .eric-thyrell-image,
+.eric-donell-image, .robert-karjel-image,
+.ami-hemviken-image,.annarie-palm-image,
+.colin-moon-image,.ebba-lourin-image,
+.emma-pihl-image,.tommy-lundberg-image,
+.gunnar-ekman-image
+{
+	background-image: url(/bilder/eric\ thyrell.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 22em; height: 20em;
+} 
+
+main .main-lecture .eric-donell-image{
+	background-image: url(/bilder/Eric\ Donell.jpg);
+}
+main .main-lecture .robert-karjel-image{
+	background-image: url(/bilder/robert\ karjel.jpg);
+}
+main .main-lecture .ami-hemviken-image{
+	background-image: url(/bilder/Ami\ Hemviken.png);
+}
+main .main-lecture .annarie-palm-image{
+	background-image: url(/bilder/Annmarie\ Palm.jpg);
+}
+main .main-lecture .colin-moon-image{
+	background-image: url(/bilder/colin\ moon.jpg);
+}
+main .main-lecture .ebba-lourin-image{
+	background-image: url(/bilder/Ebba\ Laurin.jpg);
+}
+main .main-lecture .emma-pihl-image{
+	background-image: url(/bilder/emma\ pihl.jpg);
+}
+main .main-lecture .tommy-lundberg-image{
+	background-image: url(/bilder/tommy\ lundberg.jpg);
+}
+main .main-lecture .gunnar-ekman-image{
+	background-image: url(/bilder/Gunnar\ Ekman.jpg);
+}
+
+
+
+main .main-lecture-info, .main-lecture-body h2{
+	padding: 0.5em;
+}
+main .main-lecture-checkmark{
+	padding-top: 1em;
+	text-align: right;
+}
+

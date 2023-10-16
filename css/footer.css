@@ -1,0 +1,15 @@
+footer {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(234, 242, 243);
+	padding: 1em;
+	text-align: left;
+
+}
+
+footer .footer-center img{
+	width: 8em;
+}
