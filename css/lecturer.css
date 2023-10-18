@@ -21,7 +21,7 @@ main .main-lecture-top .main-top-text {
 main .main-lecture {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 20px;
+	gap: 10px;
 	margin-top: 5em;
 	padding-bottom: 2em;
 	border-bottom: 1px solid gray;
@@ -57,7 +57,7 @@ main .eric-thyrell-image,
 }
 
 main .main-lecture .eric-donell-image {
-	background-image: url(/bilder/Eric\ Donell.jpg);
+	background-image: url("/bilder/Eric Donell.jpg");
 }
 
 main .main-lecture .robert-karjel-image {
@@ -73,7 +73,7 @@ main .main-lecture .annarie-palm-image {
 }
 
 main .main-lecture .colin-moon-image {
-	background-image: url(/bilder/colin\ moon.jpg);
+	background-image: url("/bilder/colin moon.jpg");
 }
 
 main .main-lecture .ebba-lourin-image {
@@ -109,6 +109,7 @@ main .main-lecture-checkmark {
 	width: 100%;
 	height: 100%;
 	padding: 5em;
+	/* font-size: 1.2em; */
 
 	@media (max-width: 670px) {
 		padding: 1em;
@@ -119,11 +120,13 @@ main .main-register {
 	position: sticky;
 	top: 0px;
 	left: 10em;
-	color: rgb(248, 249, 253);
+	color: rgb(239, 245, 238);
+
+	/* color: rgb(248, 249, 253); */
 	border-radius: 8px;
 	max-width: 510px;
 	padding: 1em;
-	background: rgba(80, 103, 108, 0.9);
+	background: rgba(45, 50, 50, 0.9);
 
 }
 
@@ -131,7 +134,7 @@ main form .main-top-checkmark {
 	padding: 0.6em;
 	display: inline-flex;
 
-	@media (max-width:470px) {
+	@media (max-width:450px) {
 		display: flex;
 		align-items: center;
 
@@ -141,7 +144,7 @@ main form .main-top-checkmark {
 
 
 form {
-	border: 2px solid rgb(89, 217, 221);
+	border: 2px solid rgb(239, 245, 238);
 	margin: 0.5em 0;
 	padding: 0 1em;
 }
@@ -157,21 +160,40 @@ form {
 }
 
 input:valid {
-	border-right: 1em solid rgb(35, 130, 71);
+	border: 2px solid rgb(89, 217, 221);
 
 }
 
 input:invalid {
-	border-right: 1em solid rgb(111, 33, 33);
+	border-right: 0.5em solid rgb(111, 33, 33);
+	/* background-color: rgb(231, 222, 222); */
 }
 
-.error-message {
+/* .error-message {
 	visibility: hidden;
 	margin: 0;
-	color: rgb(226, 7, 7);
+	color: rgb(244, 240, 240);
 	font-weight: bold;
-}
+} */
 
 input:invalid+.error-message {
 	visibility: visible;
+}
+form .form-button-section{
+	align-items: center;
+}
+form button{
+	padding: 0.5em 2em;
+	margin: 1em;
+	border: 1px solid rgb(240, 229, 229);
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	font-weight: bold;
+	color: rgb(240, 229, 229);
+	background-color: rgb(52, 66, 145);
+}
+form button:hover {
+	cursor: pointer;
+	background-color: rgb(206, 216, 229);
+	color: rgb(98, 123, 134);
 }

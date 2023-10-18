@@ -30,7 +30,7 @@ main .main-top-text {
 	text-shadow: 11px 12px 50px rgb(224, 63, 63);
 	border: 3px solid #f1f1f1;
 	max-width: 510px;
-	padding: 1em;
+	padding: 1em 0 1em;
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -49,7 +49,8 @@ main .main-top-text p {
 }
 
 main .main-top-checkmark {
-	padding: 0.6em;
+	padding: 0.6em 0 1em;
+	/* padding-bottom: 1.6em; */
 	display: inline-flex;
 
 }
@@ -60,11 +61,11 @@ main .form-section input, label {
 
 
 
-main .main-top-text button,
-.main-restaurang-body button {
-	padding: 0.5em 3em;
+main .main-top-text .register-btn,
+.main-restaurang-body .order-btn {
+	padding: 0.5em 5em;
 	margin: 1em;
-	border: 1px solid rgb(84, 88, 93);
+	border: 1px solid rgb(240, 229, 229);
 	border-radius: 5px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 	font-weight: bold;
@@ -72,8 +73,9 @@ main .main-top-text button,
 	background-color: rgb(52, 66, 145);
 }
 
-main .main-top-text button:hover,
-.main-restaurang-body button:hover {
+main .main-top-text .register-btn:hover,
+.main-restaurang-body .order-btn:hover {
+	border: 1px solid rgb(139, 122, 97);
 	cursor: pointer;
 	background-color: rgb(206, 216, 229);
 	color: rgb(98, 123, 134);
@@ -92,7 +94,8 @@ main .main-restaurang-body {
 	padding: 2em 0;
 	margin: 1.5em;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-	background-color: rgb(131, 206, 219);
+	background-color: rgb(236, 242, 244);
+	border: 2px solid gray;
 }
 
 main .main-restaurang-text h1 {
