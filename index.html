@@ -8,37 +8,33 @@
 	<link rel="stylesheet" href="./css/register.css" />
 	<link rel="stylesheet" href="./css/navbar.css" />
 	<link rel="stylesheet" href="./css/footer.css" />
-
+	<link rel="stylesheet" href="./css/restaurang.css" />
 	<title>Kanferance</title>
 </head>
 
 <body>
 	<header>
 		<div class="header-logo">
-			<a href="#"> <img src="./bilder/logo-2.png" alt="logo" /></a>
+			<a href="#"> <img src="./bilder/boka-logo.png" alt="logo" /></a>
 		</div>
 		<nav class="header-nav">
 			<ul>
 				<li><a href="./html/lecturer.html#main-register-top"> Anmälan </a></li>
 				<li><a href="./html/lecturer.html"> Föreläsare </a></li>
-				<li><a href="#main-top-text-restaurang"> Restaurang </a></li>
-				<li><a href="#footer-top"> Om oss </a></li>
+				<li><a href="#main-restaurang-top"> Restaurang </a></li>
+				<li><a href="#about-top"> Om oss </a></li>
 			</ul>
 		</nav>
-		<div class="acount-container">
-			<ul>
-				<li><a href="#"> Logga in</a></li>
-			</ul>
-
+		<div class="Search-input">
+			<form>
+				<input type="text" name="search" placeholder="Search..">
+			</form>
 		</div>
 	</header>
-
 	<main>
 		<section class="main-top">
 			<div class="main-top-text">
-				<h1>
-					Välkomna till konferenser och seminarier för frontend-utvecklare
-				</h1>
+				<h1> Välkomna till konferenser och seminarier för frontend-utvecklare </h1>
 				<p>
 					Här kan du hitta inspirerande blogginlägg om de senaste trenderna
 					inom såväl föreläsningsbranschen som bra tips och råd för dig som
@@ -55,7 +51,6 @@
 					<div class="main-top-checkmark">
 						<input id="day-2" type="checkbox" />
 						<label for="day-2"> Lördag 21/10 </label>
-
 					</div>
 					<div class="main-top-checkmark">
 						<input id="day-3" type="checkbox" />
@@ -67,50 +62,91 @@
 				</section>
 			</div>
 		</section>
-		<div class="main-top-text-title">
-			<h2 id="main-top-text-restaurang">Restaurang</h2>
+		<div id="main-restaurang-top">
+			<h1>Restaurang</h1>
 		</div>
-		<section class="main-restaurang-body">
-			<h1>I Restaurang kan du beställa</h1>
-			<div class="main-restaurang-image">
-				<div class="main-restaurang-checkmark">
+		<section class="restaurang-container">
+			<div class="card-container">
+				<div class="text">
 					<label for="kött">
-						<img src="./bilder/kött.jpg" alt="kött" />
+						<h2>Lammkotletter </h2>
+						<input id="kött" type="radio" name="radio" />
 					</label>
-
-					<input id="kött" type="radio" name="radio" />
-					<label for="kött"> Kött </label>
 				</div>
-				<div class="main-restaurang-checkmark">
+				<div class="card">
+					<div class="imagbox">
+						<label for="kött">
+							<img src="./bilder/kött.jpg" alt="kött" />
+						</label>
+					</div>
+					<div class="content">
+						<p>Stekta eller grillade lammkotletter med klyftpotatis, tomatsås, yoghurtsås med fetaost,
+							marinerade vita stora bönor och avokado- och tomatsallad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-container">
+				<div class="text">
 					<label for="fisk">
-						<img src="./bilder/fisk.jpg" alt="fisk" />
+						<h2>Fisk i folie </h2>
+						<input id="fisk" type="radio" name="radio" />
 					</label>
+				</div>
+				<div class="card">
+					<div class="imagbox">
+						<label for="fisk">
+							<img src="./bilder/fisk.jpg" alt="fisk" />
+						</label>
+					</div>
+					<div class="content">
+						<p>Fisk i folie med grönsaker, med torsk i smör och olivolja samt grönsaker som kokt
+							potatis, zucchini, aubergine,
+							purjolök, paprika, tomat och persilja.</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-container">
+				<div class="text">
+					<label for="kött">
+						<h2>Vegetariska </h2>
+						<input id="vegetarisk" type="radio" name="radio" />
+					</label>
+				</div>
+				<div class="card">
+					<div class="imagbox">
 
-					<input id="fisk" type="radio" name="radio" />
-					<label for="fisk"> Fisk </label>
-				</div>
-				<div class="main-restaurang-checkmark">
-					<label for="Vegetarisk">
-						<img src="./bilder/vegetarisk.jpg" alt="vegetarisk" /></label>
-					<input id="Vegetarisk" type="radio" name="radio" />
-					<label for="Vegetarisk"> Vegetarisk </label>
+						<label for="vegetarisk">
+							<img src="./bilder/vegetarisk.jpg" alt="kött" />
+						</label>
+					</div>
+					<div class="content">
+						<p>Vegetariska tacocrêpes med quornfärs smaksatt
+							med tacokrydda som gratineras med ost servera
+							som variant till tacomyset men med samma tillbehör.
+							Rulla fyllda pannkakor och gratinera med ost.</p>
+					</div>
 				</div>
 			</div>
-			<a class="order-btn" href="./html/lecturer.html#main-register-top">Anmäla</a>
 		</section>
+		<div class="main-bottom">
+			<a class="order-btn" href="./html/lecturer.html#main-register-top">Beställa här</a>
+		</div>
 	</main>
+	<section id="about-top">
+		<div class="main-about-container">
+			<h1>Om oss</h1>
+			<p>
+				Boka konferens förmedlar föreläsningar för alla tillfällen. Oavsett om du behöver en föreläsare,
+				underhållare, moderator eller konferencier har vi någon som passar för ditt specifika evenemang. Vi
+				hanterar arrangemang av alla storlekar, både offentliga och privata, för studenter och skolor. Vi
+				fungerar som länken mellan dig och din talare.</p>
+		</div>
+	</section>
 	<footer>
-		<section id="footer-top">
-			<div class="main-about-container">
-				<h1>Om oss</h1>
-				<p>
-					Boka konferens förmedlar föreläsningar för alla tillfällen. Oavsett om du behöver en föreläsare,
-					underhållare, moderator eller konferencier har vi någon som passar för ditt specifika evenemang. Vi
-					hanterar arrangemang av alla storlekar, både offentliga och privata, för studenter och skolor. Vi
-					fungerar som länken mellan dig och din talare.</p>
-			</div>
-		</section>
-		<section id="footer-bottom">
+		<div class="go-to-top">
+			<a href="#">Gå till toppen</a>
+		</div>
+		<section id="footer-container">
 			<div class="adress">
 				<h1>Address</h1>
 				<p>Cykelvädersgatan 19</p>

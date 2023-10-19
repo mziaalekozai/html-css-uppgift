@@ -14,21 +14,20 @@
 <body>
 	<header>
 		<div class="header-logo">
-			<a href="../index.html"> <img src="../bilder/logo-1.png" alt="logo" /></a>
+			<a href="../index.html"> <img src="../bilder/boka-logo.png" alt="logo" /></a>
 		</div>
 		<nav class="header-nav">
 			<ul>
 				<li><a href="#main-register-top"> Anmälan </a></li>
 				<li><a href="#"> Föreläsare </a></li>
-				<li><a href="../index.html#main-top-text-restaurang"> Restaurang </a></li>
-				<li><a href="../index.html#footer-top"> Om oss </a></li>
+				<li><a href="../index.html#main-restaurang-top"> Restaurang </a></li>
+				<li><a href="../index.html#about-top"> Om oss </a></li>
 			</ul>
 		</nav>
-		<div class="acount-container">
-			<ul>
-				<li><a href="#"> Logga in</a></li>
-			</ul>
-
+		<div class="Search-input">
+			<form>
+				<input type="text" name="search" placeholder="Search..">
+			</form>
 		</div>
 	</header>
 	<main>
@@ -204,10 +203,8 @@
 				<div class="main-lecture-info">
 					<h4>Web Accessibility Summit</h4>
 					<p>
-						Web Accessibility Summit är en konferens som fokuserar på att göra
-						webben tillgänglig för alla. Lär dig bästa praxis och tekniker för
-						att skapa webbplatser och appar som är tillgängliga och användbara
-						för personer med funktionsnedsättningar.
+						Är en konferens dedikerad till att främja webbtillgänglighet och lära ut bästa praxis för att
+						skapa webbplatser och appar som är användbara och tillgängliga för alla.
 					</p>
 					<div class="main-lecture-checkmark">
 						<label class="checkmark-container">Söndag 22/10
@@ -238,26 +235,10 @@
 							<label for="day-3"> Söndag 22/10 </label>
 						</div>
 					</section>
-					<section class="checkbox-section">
-						<p> Välj Mat </p>
-						<div class="main-top-checkmark">
-							<input id="fisk" type="radio" name="radio" />
-							<label for="fisk"> Fisk </label>
-						</div>
-						<div class="main-top-checkmark">
-							<input id="kött" type="radio" name="radio" />
-							<label for="kött"> Kött </label>
-						</div>
-						<div class="main-top-checkmark">
-							<input id="vegetarisk" type="radio" name="radio" />
-							<label for="vegetarisk"> Vegetarisk </label>
-						</div>
-					</section>
 					<section class="form-section">
 						<label for="form-name"> Skriv in ditt namn </label>
 						<input id="form-name" type="text" value="" placeholder="Namn" required minlength="2"
 							maxlength="15" />
-						<!-- <p class="error-message"> Var vänlig skriv in ditt namn </p> -->
 					</section>
 
 					<section class="form-section">
@@ -278,29 +259,35 @@
 						<input id="form-email" type="email" required value=""
 							placeholder="boka-konfrerans@konferens.com" />
 					</section>
+					<section class="checkbox-section">
+						<p> Välj Mat </p>
+						<div class="main-top-checkmark">
+							<input id="fisk" type="radio" name="radio" />
+							<label for="fisk"> Fisk </label>
+						</div>
+						<div class="main-top-checkmark">
+							<input id="kött" type="radio" name="radio" />
+							<label for="kött"> Kött </label>
+						</div>
+						<div class="main-top-checkmark">
+							<input id="vegetarisk" type="radio" name="radio" />
+							<label for="vegetarisk"> Vegetarisk </label>
+						</div>
+					</section>
 					<section class="form-button-section">
 						<button type="submit"> Anmäla</button>
 						<button type="reset"> Avbryt</button>
 					</section>
-
 			</div>
 		</section>
-
 		</form>
 	</main>
 
 	<footer>
-		<section id="footer-top">
-			<div class="main-about-container">
-				<h1>Om oss</h1>
-				<p>
-					Boka konferens förmedlar föreläsningar för alla tillfällen. Oavsett om du behöver en föreläsare,
-					underhållare, moderator eller konferencier har vi någon som passar för ditt specifika evenemang. Vi
-					hanterar arrangemang av alla storlekar, både offentliga och privata, för studenter och skolor. Vi
-					fungerar som länken mellan dig och din talare.</p>
-			</div>
-		</section>
-		<section id="footer-bottom">
+		<div class="go-to-top">
+			<a href="#">Gå till toppen</a>
+		</div>
+		<section id="footer-container">
 			<div class="adress">
 				<h1>Address</h1>
 				<p>Cykelvädersgatan 19</p>

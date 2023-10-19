@@ -14,8 +14,8 @@ main .main-lecture-top {
 
 main .main-lecture-top .main-top-text {
 	max-width: 600px;
-	padding: 1em;
-	font-size: 1.5em;
+	padding: 2em 1em;
+	font-size: 1.8em;
 }
 
 main .main-lecture {
@@ -101,6 +101,11 @@ main .main-lecture-checkmark {
 	padding-top: 1em;
 	text-align: right;
 }
+main .main-lecture-checkmark:hover {
+	cursor: pointer;
+	color: rgb(108, 128, 241);
+	font-weight: bold;
+}
 
 #main-register-top {
 	background-image: url(/bilder/mainförläsare.jpg);
@@ -121,8 +126,6 @@ main .main-register {
 	top: 0px;
 	left: 10em;
 	color: rgb(239, 245, 238);
-
-	/* color: rgb(248, 249, 253); */
 	border-radius: 8px;
 	max-width: 510px;
 	padding: 1em;
@@ -137,16 +140,13 @@ main form .main-top-checkmark {
 	@media (max-width:450px) {
 		display: flex;
 		align-items: center;
-
 	}
-
 }
 
-
-form {
+.main-register form {
 	border: 2px solid rgb(239, 245, 238);
-	margin: 0.5em 0;
-	padding: 0 1em;
+	margin: 1em ;
+	padding:1em;
 }
 
 .form-section {
@@ -166,17 +166,9 @@ input:valid {
 
 input:invalid {
 	border-right: 0.5em solid rgb(111, 33, 33);
-	/* background-color: rgb(231, 222, 222); */
 }
 
-/* .error-message {
-	visibility: hidden;
-	margin: 0;
-	color: rgb(244, 240, 240);
-	font-weight: bold;
-} */
-
-input:invalid+.error-message {
+input:invalid {
 	visibility: visible;
 }
 form .form-button-section{

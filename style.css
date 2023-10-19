@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: rgb(219, 226, 226);
+	background-color: rgb(237, 239, 242);
 }
 
 main .main-top {
@@ -19,7 +19,7 @@ main .main-top {
 	display: flex;
 	text-align: center;
 	padding: 5em;
-	
+
 }
 
 main .main-top-text {
@@ -30,7 +30,7 @@ main .main-top-text {
 	text-shadow: 11px 12px 50px rgb(224, 63, 63);
 	border: 3px solid #f1f1f1;
 	max-width: 510px;
-	padding: 1em 0 1em;
+	padding: 1em 1em 2em;
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -49,92 +49,47 @@ main .main-top-text p {
 }
 
 main .main-top-checkmark {
-	padding: 0.6em 0 1em;
-	/* padding-bottom: 1.6em; */
+	padding: 1em;
+	padding-bottom: 2em;
 	display: inline-flex;
 
 }
 
-main .form-section input, label {
+main .main-top-checkmark input,
+.main-top-checkmark label:hover {
 	cursor: pointer;
+	color: rgb(108, 128, 241);
+	font-weight: bold;
 }
 
-
-
 main .main-top-text .register-btn,
-.main-restaurang-body .order-btn {
+main .order-btn {
 	padding: 0.5em 5em;
 	margin: 1em;
-	border: 1px solid rgb(240, 229, 229);
-	border-radius: 5px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgb(195, 182, 182);
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 	font-weight: bold;
 	color: rgb(240, 229, 229);
 	background-color: rgb(52, 66, 145);
 }
 
 main .main-top-text .register-btn:hover,
-.main-restaurang-body .order-btn:hover {
-	border: 1px solid rgb(139, 122, 97);
+main .order-btn:hover {
 	cursor: pointer;
-	background-color: rgb(206, 216, 229);
-	color: rgb(98, 123, 134);
+	background-color: rgb(31, 45, 127);
+	color: rgb(237, 242, 244);
+	border-radius: 5em;
+	font-size: 1.3em;
 }
-
-main .main-top-text-title {
-	padding: 1em 0 1em;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgb(84, 88, 93);
-	color: rgb(71, 59, 65);
-	font-size: 2em;
-}
-
-main .main-restaurang-body {
-	text-align: center;
-	padding: 2em 0;
-	margin: 1.5em;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-	background-color: rgb(236, 242, 244);
-	border: 2px solid gray;
-}
-
-main .main-restaurang-text h1 {
-	font-size: 2em;
-	color: rgb(49, 55, 86);
-	text-shadow: 1px 2px 2px rgb(226, 230, 235);
-	
-}
-
-main .main-restaurang-image img {
-	width: 15em;
-	border-radius: 5px;
-}
-
-main .main-restaurang-image {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 15px;
-	place-items: center;
-	padding: 1em;
-	
-}
-
-main .main-restaurang-checkmark {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 
 @media (max-width: 670px) {
 	main .main-top {
-		padding: 3em;
+		padding: 3em 2em;
 		font-size: 12px;
 	}
 
-	main .main-top-text {
-		columns: auto;
-		padding: 1em;
+	main .main-top-checkmark {
+		padding:0 0.6em 2em;
 	}
 }
-
