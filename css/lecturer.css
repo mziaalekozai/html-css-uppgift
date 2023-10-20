@@ -114,7 +114,6 @@ main .main-lecture-checkmark:hover {
 	width: 100%;
 	height: 100%;
 	padding: 5em;
-	/* font-size: 1.2em; */
 
 	@media (max-width: 670px) {
 		padding: 1em;
@@ -141,7 +140,9 @@ main form .main-top-checkmark {
 		display: flex;
 		align-items: center;
 	}
+
 }
+
 
 .main-register form {
 	border: 2px solid rgb(239, 245, 238);
@@ -179,7 +180,7 @@ form button{
 	margin: 1em;
 	border: 1px solid rgb(240, 229, 229);
 	border-radius: 5px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 10px rgba(247, 245, 245, 0.5);
 	font-weight: bold;
 	color: rgb(240, 229, 229);
 	background-color: rgb(52, 66, 145);

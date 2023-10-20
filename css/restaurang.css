@@ -2,8 +2,6 @@ main .restaurang-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	place-items: center;
-	gap: 20px;
-	padding: 2em 0;
 	box-sizing: border-box;
 }
 
@@ -18,12 +16,12 @@ main .restaurang-container .card {
 }
 
 main .restaurang-container .card:hover {
-	height: 370px;
+	height: 350px;
 }
 
 main .restaurang-container .card:hover>.content {
 	opacity: 1;
-	transform: translateY(-225px);
+	transform: translateY(-200px);
 }
 
 main .restaurang-container .imagbox {
@@ -42,7 +40,7 @@ main .restaurang-container img {
 }
 
 main .restaurang-container .content {
-	padding: 10px 20px;
+	padding: 1px 20px;
 	text-align: center;
 	transform: translateY(-220px);
 	opacity: 0;
@@ -62,12 +60,18 @@ input:hover {
 	font-weight: bold;
 }
 
-main #main-restaurang-top h1 ,main .main-bottom  {
-	padding-top: 2em;
+main #main-restaurang-top h1 ,main .main-bottom {
+	padding: 2em 0 0.5em;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	font-weight: bold;
 	color: rgb(52, 66, 145);
+}
+main #main-restaurang-top p{
+	width: 100%;
+	padding:0 2em 1em;
+	text-align: center;
+	font-weight: bold;
 }

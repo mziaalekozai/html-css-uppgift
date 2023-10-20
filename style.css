@@ -49,13 +49,15 @@ main .main-top-text p {
 }
 
 main .main-top-checkmark {
-	padding: 1em;
+	padding: 0.4em;
 	padding-bottom: 2em;
 	display: inline-flex;
 
 }
-
-main .main-top-checkmark input,
+.main-top-checkmark label{
+	margin-left: 5px;
+}
+main .main-top-checkmark input:hover,
 .main-top-checkmark label:hover {
 	cursor: pointer;
 	color: rgb(108, 128, 241);
@@ -68,7 +70,7 @@ main .order-btn {
 	margin: 1em;
 	border: 1px solid rgb(195, 182, 182);
 	border-radius: 10px;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 5px 10px rgba(247, 245, 245, 0.5);;
 	font-weight: bold;
 	color: rgb(240, 229, 229);
 	background-color: rgb(52, 66, 145);
@@ -77,10 +79,8 @@ main .order-btn {
 main .main-top-text .register-btn:hover,
 main .order-btn:hover {
 	cursor: pointer;
-	background-color: rgb(31, 45, 127);
-	color: rgb(237, 242, 244);
-	border-radius: 5em;
-	font-size: 1.3em;
+	background-color:rgb(237, 242, 244) ;
+	color:rgb(31, 45, 127) ;
 }
 
 @media (max-width: 670px) {
