@@ -1,0 +1,10 @@
+{
+	"name": "bokakonferens",
+	"dependencies": {
+    "init": "^0.1.2",
+    "surge": "^0.23.1"
+},
+	"scripts": {
+		"deploy": "surge ."
+	  }
+}
