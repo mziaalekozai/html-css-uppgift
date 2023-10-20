@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "dependencies": {
+    "surge": "^0.23.1"
+  },
+  "scripts": {
+	  "deploy": "surge ."
+	}
+}
